@@ -1,11 +1,15 @@
-\documentclass{article}
-\usepackage[backend = biber]{biblatex}
+\documentclass[a4paper, 12pt]{article}
+\usepackage[backend = biber, style = ieee, citestyle = alphabetic-verb]{biblatex}
 \usepackage[colorlinks = true, linkcolor = blue, urlcolor = blue, citecolor = red]{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{{img/}}
 \title{Report}
 \author{Author}
 \addbibresource{ref.bib}
 \begin{document}
 \maketitle
+\sloppy
 \section{chapter 1}
 \cite{example_ref}
 \section{chapter 2}
