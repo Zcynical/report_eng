@@ -10,8 +10,16 @@
 \begin{document}
 \maketitle
 \sloppy
+\section*{Intro}
 \section{chapter 1}
-\cite{example_ref}
+\begin{figure}[htbp]
+\centering
+\subcaptionbox{caption}[0.3\linewidth][c]{\includegraphics[width=0.25\linewidth]{example_fig.pdf}}
+\subcaptionbox{caption}[0.3\linewidth][c]{\includegraphics[width=0.25\linewidth]{example_fig.pdf}}
+\subcaptionbox{caption}[0.3\linewidth][c]{\includegraphics[width=0.25\linewidth]{example_fig.pdf}}
+\caption{\label{fig:example}\cite{example_ref}}
+\end{figure}
+
 \section{chapter 2}
 \printbibliography
 \end{document}
