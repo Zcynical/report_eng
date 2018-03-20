@@ -1,4 +1,5 @@
 \documentclass[a4paper, 12pt]{article}
+\usepackage[top=1in, bottom=1in, left=1.2in, right=1.2in]{geometry}
 \usepackage[backend = biber, style = ieee, citestyle = alphabetic-verb]{biblatex}
 \usepackage[colorlinks = true, linkcolor = blue, urlcolor = blue, citecolor = red]{hyperref}
 \usepackage{graphicx}
@@ -10,8 +11,14 @@
 \begin{document}
 \maketitle
 \sloppy
+\begin{abstract}
+
+\end{abstract}
+
 \section*{Intro}
-\section{chapter 1}
+
+\section{Section 1}
+
 \begin{figure}[htbp]
 \centering
 \subcaptionbox{caption}[0.3\linewidth][c]{\includegraphics[width=0.25\linewidth]{example_fig.pdf}}
@@ -20,6 +27,7 @@
 \caption{\label{fig:example}\cite{example_ref}}
 \end{figure}
 
-\section{chapter 2}
+\section{Section 2}
+
 \printbibliography
 \end{document}
